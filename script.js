@@ -18,3 +18,5 @@ $(document).ready(function () {
   }
 });
 /*add navbar active link*/
+
+/*add expandable navagation bar when width is less than 860px;*/
