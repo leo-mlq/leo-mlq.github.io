@@ -277,3 +277,22 @@ h1{
     max-width: 100%;
   }
 }
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-family: Bahnschrift Light;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateX(16px);
+}
