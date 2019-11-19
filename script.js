@@ -41,10 +41,10 @@ const navScrollHighlight=()=>{
       })
     }
     console.log(sectionID);
-    $('nav > ul > li > a').css({'font-weight':'',
+    $('nav  ul  li  a').css({'font-weight':'',
                                 'color': ''
                                });
-    $("ul li a[href=#"+sectionID+"]").css({ 'font-weight':'400',
+    $("nav ul li a[href=#"+sectionID+"]").css({ 'font-weight':'400',
                                     'color': 'white'
                                    });
   });
