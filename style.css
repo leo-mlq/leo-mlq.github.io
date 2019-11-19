@@ -126,8 +126,7 @@ html{
 }
 .navlist > li > a:hover{
   color: white;
-  font-weight: 800;
-  active
+  font-weight: 600;
 }
 
 /*about section*/

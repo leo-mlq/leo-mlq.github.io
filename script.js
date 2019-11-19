@@ -25,16 +25,28 @@ const navScrollHighlight=()=>{
     let currentScroll=$(this).scrollTop();
     let $currentSection;
     let windowWidth = window.innerWidth;
-    $allSections.each(function(){
-      let sectionTop=$(this).offset().top;
-      if(currentScroll > sectionTop && windowWidth>WIDTH_LIMIT){
-        $currentSection=$(this);
-      }
-      let sectionID=$currentSection.attr('id');
-      
-      $('li > a').css('font-weight','400');
-   	  $("[href=#"+sectionID+"]").css('font-weight','800');
-    })
+    let sectionID;
+
+    if(currentScroll>=3771){
+        sectionID='contact';
+        
+    }
+    else{
+      $allSections.each(function(){
+        let sectionTop=$(this).offset().top;
+        if(currentScroll > sectionTop  && windowWidth>WIDTH_LIMIT){
+          $currentSection=$(this);
+          sectionID=$currentSection.attr('id');
+        }
+      })
+    }
+    console.log(sectionID);
+    $('nav > ul > li > a').css({'font-weight':'',
+                                'color': ''
+                               });
+    $("[href=#"+sectionID+"]").css({ 'font-weight':'600',
+                                    'color': 'white'
+                                   });
   });
 };
 $(document).ready(function () {
