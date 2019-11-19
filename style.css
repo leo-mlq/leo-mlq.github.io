@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*setting these makes no gaps between the background and border*/
+
 }
 
 *,
@@ -126,7 +126,8 @@ html{
 }
 .navlist > li > a:hover{
   color: white;
-  font-weight: 600;
+  font-weight: 800;
+  active
 }
 
 /*about section*/
