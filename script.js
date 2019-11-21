@@ -34,7 +34,7 @@ const navScrollHighlight=()=>{
     else{
       $allSections.each(function(){
         let sectionTop=$(this).offset().top;
-        if(currentScroll > sectionTop  && windowWidth>WIDTH_LIMIT){
+        if(currentScroll > sectionTop-1  && windowWidth>WIDTH_LIMIT){
           $currentSection=$(this);
           sectionID=$currentSection.attr('id');
         }
