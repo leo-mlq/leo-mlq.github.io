@@ -40,7 +40,7 @@ const navScrollHighlight=()=>{
         }
       })
     }
-    console.log(currentScroll);
+    console.log(sectionID);
     $('nav  ul  li  a').css({'font-weight':'',
                                 'color': ''
                                });
