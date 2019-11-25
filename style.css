@@ -296,3 +296,13 @@ h1{
 .contact-details:hover {
   transform: translateX(16px);
 }
+
+.blog-container{
+  background-color: #f8f9fa;
+  height: auto;
+  padding: 10% 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

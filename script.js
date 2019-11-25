@@ -27,7 +27,7 @@ const navScrollHighlight=()=>{
     let windowWidth = window.innerWidth;
     let sectionID;
 
-    if(currentScroll>=3771){
+    if(currentScroll>=3610){
         sectionID='contact';
         
     }
@@ -40,7 +40,7 @@ const navScrollHighlight=()=>{
         }
       })
     }
-    console.log(sectionID);
+    console.log(currentScroll);
     $('nav  ul  li  a').css({'font-weight':'',
                                 'color': ''
                                });
@@ -49,8 +49,21 @@ const navScrollHighlight=()=>{
                                    });
   });
 };
+
+var txt='Learning to be a Full Stack Developer';
+var speed = 70;
+var i=0;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typeEffect").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+};
+
 $(document).ready(function () {
   navColorChange();
   navScrollHighlight();
+  typeWriter();
 });  
 /*add expandable navagation bar when width is less than 860px;*/
