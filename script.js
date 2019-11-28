@@ -81,6 +81,6 @@ $(document).ready(function () {
   navColorChange();
   navScrollHighlight();
   typeWriter();
-  handleClickMore();
+  //handleClickMore();
 });  
 /*add expandable navagation bar when width is less than 860px;*/
