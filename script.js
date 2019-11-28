@@ -61,6 +61,22 @@ function typeWriter() {
   }
 };
 
+function handleClickMore() {
+  var fired_button = $('#more').attr('value');
+  if(fired_button==='More'){
+    $('.grid-container > a').removeClass('noDisplay');
+    document.getElementById("more").innerHTML='Less';
+    $('#more').val('Less');
+  
+  }
+  else{
+    $('#techDoc').addClass('noDisplay');
+    document.getElementById("more").innerHTML='More';
+    console.log($('#more').attr('class'));
+    $('#more').val('More');
+  }
+}
+
 $(document).ready(function () {
   navColorChange();
   navScrollHighlight();

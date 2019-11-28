@@ -306,3 +306,17 @@ h1{
   flex-direction: column;
   align-items: center;
 }
+
+.noDisplay{
+  display: none;
+}
+
+.viewMore{
+  border: none;
+  display: block;
+  margin: 100px auto 0;
+  border-radius: 6px;
+  &:hover{
+    pointer:cursor;
+  }
+}
