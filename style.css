@@ -203,7 +203,7 @@ h1{
   height: 320px;
 }
 .project-image {
-  height: auto;
+  height: 320px;
   width: 100%;
   object-fit: cover;
 }
