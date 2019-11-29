@@ -1,22 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
-html{
+
+html {
   box-sizing: border-box;
   /*fix difference sizing*/
   scroll-behavior: smooth;
   font-family: sans-serif;
 }
+
 /*welcoming section*/
-.welcoming{
+.welcoming {
   width: 100%;
   height: 100vh;
   /*100 viewpoint height*/
@@ -24,36 +22,34 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-  ), url(https://images.unsplash.com/photo-1514428631868-a400b561ff44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1514428631868-a400b561ff44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-color: #000000;
   /*alternative background if image not working*/
-  background-position: center center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
- 
+  background-position: center center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
-.porfolio-image{
+.welcoming_image {
   max-width: 175px;
   max-height: 175px;
-  border-radius: 50%;;
-  
+  border-radius: 50%;
 }
-.welcoming > h1{
+.welcoming h1 {
   font-family: Ink Free;
   font-size: 3rem;
   margin: 2rem auto;
   color: white;
 }
-.welcoming > p{
+.welcoming p {
   font-family: Florence;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   font-size: 1.5rem;
 }
 
-.btns{
+.btns {
   display: block;
   position: relative;
   /*why setting relative? 
@@ -65,84 +61,33 @@ html{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  cursor: pointer; /*finger*/
+  cursor: pointer;
+  /*finger*/
   border-radius: 5px;
   margin: 30px auto;
   padding: 10px 20px;
   color: white;
   font-size: 1.5rem;
+  /*simple mean after hover, width of white background grows from 0 to 100% with a transistion cubic-bezier in 0.3s*/
 }
-.btns::after{
+.btns::after {
   content: "";
   background: white;
-	mix-blend-mode: exclusion;
+  mix-blend-mode: exclusion;
   width: 0;
   border-radius: 5px;
   height: 100%;
   position: absolute;
   bottom: 0px;
   left: 0px;
-	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-
-.btns:hover::after{
-	width: 100%;
+.btns:hover::after {
+  width: 100%;
 }
-/*simple mean after hover, width of white background grows from 0 to 100% with a transistion cubic-bezier in 0.3s*/
 
 /*navigation section*/
-.sticky-top{
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  z-index:1020;
-}
-.navbar{
-  width: 100%;
-  height: 60px;
-  background: black;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-}
-.navlist{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-}
-.navlist > li{
-  margin: 2.5rem;
-}
-.navlist > li > a{
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: rgb(210, 212, 207);
-}
-@media(max-width: 860px){
-
-}
-.navlist > li > a:hover{
-  color: white;
-  font-weight: 400;
-}
-
-/*about section*/
-.container{
-  width: 100%;
-  height: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-#aboutme > .container{
-  height: auto;
-}
-h1{
+h1 {
   color: black;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 2rem;
@@ -152,7 +97,53 @@ h1{
   min-width: 60vw;
   text-align: center;
 }
-.t1{
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.navbar_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.navbar_list li {
+  margin: 2.5rem;
+}
+.navbar_list li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #d2d4cf;
+}
+.navbar_list li a:hover {
+  color: white;
+  font-weight: 400;
+}
+
+.navbar--sticky {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/*about section*/
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .t1 {
   font-family: Bahnschrift Light;
   font-size: 1.3rem;
   line-height: 1.7;
@@ -160,7 +151,7 @@ h1{
   font-weight: 400;
   margin-bottom: 30px;
 }
-.t2{
+.container .t2 {
   font-size: 1.1rem;
   text-align: justify;
   font-family: Bahnschrift Light;
@@ -170,22 +161,37 @@ h1{
   max-width: 600px;
   text-overflow: clip;
 }
-.divider{
+
+.divider {
   width: 3.125rem;
   height: 0.25rem;
   border-radius: 0.25rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  background-color: #000000
+  background-color: #000000;
+}
+
+.divider--center {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.divider--white {
+  background-color: white;
 }
 
 /*project section*/
-.project-section-container{
+.project_container {
   background-color: #f8f9fa;
   height: auto;
   padding: 10% 4rem;
 }
-.grid-container {
+
+.project_container--white {
+  background-color: white;
+}
+
+.grid {
   display: grid;
   grid-gap: 50px;
   width: 100%;
@@ -195,59 +201,67 @@ h1{
   /*at least 3 items in a row (with margin)*/
   margin: 0 auto;
 }
-.grid-item{
-  border: solid 1px rgb(56, 55, 55);
+.grid .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+.grid_item {
+  border: solid 1px #383737;
   border-radius: 2px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   position: relative;
   height: 320px;
 }
-.project-image {
+.grid_item_image {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  font-size: 2rem;
-  padding: 20px;
-  text-align: center;
-}
-/*adapted from https://www.w3schools.com/howto/howto_css_image_overlay_title.asp*/
-/* When you mouse over the grid-item, fade in the overlay title */
-.grid-item:hover .overlay {
+.grid_item:hover .overlay {
   opacity: 1;
+}
+.grid .noDisplay {
+  display: none;
+}
+.grid .viewMore {
+  border: none;
+  display: block;
+  margin: 100px auto 0;
+  border-radius: 6px;
+}
+.grid .viewMore:hover {
+  pointer: cursor;
 }
 
 /*contact and footer*/
-
-#contact{
+#contact {
   background-color: #212529;
   width: 100%;
   height: auto;
   color: white;
 }
-.contact-box{
-  width:100%;
+#contact .contact_box {
+  width: 100%;
   height: 100%;
   padding: 5% 10%;
-  
 }
-
-.left-box{
+#contact .contact_box .left_box {
   display: inline-block;
   max-width: 30%;
   text-align: left;
   line-height: 1.5rem;
   color: white;
 }
-.right-box{
+#contact .contact_box .right_box {
   float: right;
   margin-right: 20%;
   display: inline-block;
@@ -256,67 +270,51 @@ h1{
   line-height: 1.5rem;
   color: white;
 }
-.footer{
-  display: block;
-  width: 80%;
-  text-align: center;
-  padding: 3%;
-  color: rgb(224, 224, 222);
-  border-top: solid 2px rgba(255, 255, 255, 0.1);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media(max-width: 640px){
-  .left-box{
-    display: block;
-    max-width: 100%;
-    margin-bottom: 5%;
-  }
-  .right-box{
-    float: none;
-    position: relative;
-    max-width: 100%;
-  }
-}
-
-.contact-links {
+#contact .contact_box .right_box .contact_links {
   display: flex;
   flex-direction: column;
   align-items: start;
   flex-wrap: wrap;
 }
-
-.contact-details {
+#contact .contact_box .right_box .contact_details {
   font-family: Bahnschrift Light;
   font-size: 16px;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease-out;
 }
-
-.contact-details:hover {
+#contact .contact_box .right_box .contact_details:hover {
   transform: translateX(16px);
 }
+#contact .footer {
+  display: block;
+  width: 80%;
+  text-align: center;
+  padding: 3%;
+  color: #e0e0de;
+  border-top: solid 2px rgba(255, 255, 255, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.blog-container{
+@media (max-width: 640px) {
+  .left_box {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .right_box {
+    float: none;
+    position: relative;
+    max-width: 100%;
+  }
+}
+.blog_container {
   background-color: #f8f9fa;
   height: 500px;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.noDisplay{
-  display: none;
-}
-
-.viewMore{
-  border: none;
-  display: block;
-  margin: 100px auto 0;
-  border-radius: 6px;
-  &:hover{
-    pointer:cursor;
-  }
 }

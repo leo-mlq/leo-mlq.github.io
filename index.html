@@ -29,14 +29,14 @@
 <!--welcoming section-->
 <div id="main">
   <section id="welcoming" class="welcoming">
-    <img class="porfolio-image" src="https://drive.google.com/uc?id=1lLXnju_eumdDPfEonUtXdp1PWymbuHUT" alt="LeoMei"></img>
+    <img class="welcoming_image" src="https://drive.google.com/uc?id=1lLXnju_eumdDPfEonUtXdp1PWymbuHUT" alt="LeoMei"></img>
     <h1>Hi, I'm Leo Mei</h1>
     <p id="typeEffect"></p>
     <a href="#aboutme" class="btns">CLICK ME!</a>
   </section>
   <!--navigation section-->
-  <nav id="navbar" class="sticky-top navbar">
-    <ul class="navlist">
+  <nav id="navbar" class="navbar navbar--sticky">
+    <ul class="navbar_list">
       <li>
         <a href="#welcoming">Home</a>
       </l1>
@@ -50,7 +50,7 @@
         <a href="#certifications">Certifications</a>
       </l1>
       <li>
-        <a href="#blog">blog</a>
+        <a href="#blog">Blog</a>
       </l1>
       <li>
         <a href="#contact">Contact</a>
@@ -69,59 +69,59 @@
   
   <!--projects-->
   <section id="projects" class="nav_highlight">
-    <div class="project-section-container">
+    <div class="project_container">
       <h1 style="margin: 0;">Some of my projects</h1>
-      <div class="divider" style="display: block;margin:1.5rem auto;}"></div>
-      <div class="grid-container">
-         <a href="https://codepen.io/leo-mei/pen/vYYqYWN" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://i.ibb.co/2kxVJ0j/calculator.png" alt="Calculator"/>
+      <div class="divider divider--center"></div>
+      <div class="grid">
+         <a href="https://codepen.io/leo-mei/pen/vYYqYWN" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://i.ibb.co/2kxVJ0j/calculator.png" alt="Calculator"/>
           <div class="overlay">Calculator</div>
         </a>
-        <a href="https://codepen.io/leo-mei/pen/wvvZvrm" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://i.ibb.co/PcyCsFc/on.png" alt="Drum Machine"/>
+        <a href="https://codepen.io/leo-mei/pen/wvvZvrm" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://i.ibb.co/PcyCsFc/on.png" alt="Drum Machine"/>
           <div class="overlay">Drum Machine</div>
         </a>
-        <a href="https://codepen.io/leo-mei/pen/JjjxzYG" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://i.ibb.co/cwbLxzr/markdown.png" alt="Markdown Previewer"/>
+        <a href="https://codepen.io/leo-mei/pen/JjjxzYG" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://i.ibb.co/cwbLxzr/markdown.png" alt="Markdown Previewer"/>
           <div class="overlay">Markdown Previewer</div>
         </a>
-        <a href="https://codepen.io/leo-mei/pen/xxxmrxE" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://i.ibb.co/GfD7BM7/quote-Machine.png" alt="Random Quote Machine"/>
+        <a href="https://codepen.io/leo-mei/pen/xxxmrxE" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://i.ibb.co/GfD7BM7/quote-Machine.png" alt="Random Quote Machine"/>
           <div class="overlay">Random Quote Machine</div>
         </a>
-        <a href="https://codepen.io/leo-mei/pen/ExxPjrw" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://i.ibb.co/3CVCw9Z/productlanding.png" alt="Product Landing"/>
+        <a href="https://codepen.io/leo-mei/pen/ExxPjrw" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://i.ibb.co/3CVCw9Z/productlanding.png" alt="Product Landing"/>
           <div class="overlay">Product Landing</div>
         </a>
-        <a href="https://codepen.io/leo-mei/pen/xxxGeNd" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://i.ibb.co/YfWrt8L/surveyformpng.png" alt="Survey Form"/>
+        <a href="https://codepen.io/leo-mei/pen/xxxGeNd" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://i.ibb.co/YfWrt8L/surveyformpng.png" alt="Survey Form"/>
           <div class="overlay">Survey Form</div>
         </a>
-        <a id='techDoc' href="https://codepen.io/leo-mei/full/zYYqPyj" target="_blank" class="grid-item noDisplay">
-          <img class="project-image"    src="https://i.ibb.co/zsQRdBn/technicaldoc.png" alt="Technical Document"/>
+        <a id='techDoc' href="https://codepen.io/leo-mei/full/zYYqPyj" target="_blank" class="grid_item noDisplay">
+          <img class="grid_item_image"    src="https://i.ibb.co/zsQRdBn/technicaldoc.png" alt="Technical Document"/>
           <div class="overlay">Technical Document</div>
         </a>
       </div>
-      <button id='more' class='viewMore btns' value='More' type="button" onclick='handleClickMore()'>More</button>
+      <button id='more' class='btns viewMore' value='More' type="button" onclick='handleClickMore()'>More</button>
     </div>
   </section>
 
     <!--certifications-->
   <section id="certifications" class="nav_highlight">
-    <div class="project-section-container" style="background-color: white;">
-      <h1 style="margin: 0;">Certifications</h1>
-      <div class="divider" style="display: block;margin:1.5rem auto;}"></div>
-      <div class="grid-container">
-        <a href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/javascript-algorithms-and-data-structures" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://drive.google.com/uc?id=1uV99K8ZnIZcHHhg4r6ZUy7YCRKfIqTKj" alt="Javascript Certification"/>
+    <div class="project_container project_container--white">
+      <h1>Certifications</h1>
+      <div class="divider divider--center"></div>
+      <div class="grid">
+        <a href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/javascript-algorithms-and-data-structures" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://drive.google.com/uc?id=1uV99K8ZnIZcHHhg4r6ZUy7YCRKfIqTKj" alt="Javascript Certification"/>
         </a>
-        <a href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/responsive-web-design" target="_blank" class="grid-item">
-          <img class="project-image"    src="https://drive.google.com/uc?id=10_tpgK_2oWrA5Sg1LxHTb1GfOsRS9jfU" alt="Responsive Web Design Certification"/>
+        <a href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/responsive-web-design" target="_blank" class="grid_item">
+          <img class="grid_item_image"    src="https://drive.google.com/uc?id=10_tpgK_2oWrA5Sg1LxHTb1GfOsRS9jfU" alt="Responsive Web Design Certification"/>
         </a>
       </div>
     </div>
   </section>
-  <section  id="blog" class="blog-container nav_highlight">
+  <section  id="blog" class="blog_container nav_highlight">
     <h1>Posts</h1>
     <div class="divider"></div>
     <ol>
@@ -130,21 +130,21 @@
   </section>
 <!--contact-->
   <section id="contact" class="nav_highlight">
-    <div class="contact-box">
-      <div class="left-box">
+    <div class="contact_box">
+      <div class="left_box">
         <h3>Leo Mei</h3> 
-        <div class="divider" style="background-color: white;"></div>
+        <div class="divider divider--white"></div>
         <p>I enjoy making progress with friends. If you have the similar career goal and would like to discuss, please contact me.</p>
       </div>
-      <div class="right-box">
+      <div class="right_box">
         <h3>Contact Information</h3> 
-        <div class="divider" style="background-color: white;"></div>
-        <div class="contact-links">
-          <a href="tel:805-637-6787" class="contact-details"><i class="fas fa-mobile-alt"></i> (805)637-6787</a>
-          <a href="mailto:liqiangmei@outlook.com" class="contact-details"><i class="fas fa-envelope"></i>  liqiangmei@outlook.com</a>
+        <div class="divider divider--white"></div>
+        <div class="contact_links">
+          <a href="tel:805-637-6787" class="contact_details"><i class="fas fa-mobile-alt"></i> (805)637-6787</a>
+          <a href="mailto:liqiangmei@outlook.com" class="contact_details"><i class="fas fa-envelope"></i>  liqiangmei@outlook.com</a>
          
-          <a href="https://github.com/leomei95" target="_blank" class="contact-details"><i class="fab fa-github"></i> leomei95</a>
-          <a href="https://www.google.com/maps?q=oakland,ca" target="_blank" class="contact-details"><i class="fa fa-map-marker"></i> Oakland, CA</a>
+          <a href="https://github.com/leomei95" target="_blank" class="contact_details"><i class="fab fa-github"></i> leo-mlq</a>
+          <a href="https://www.google.com/maps?q=oakland,ca" target="_blank" class="contact_details"><i class="fa fa-map-marker"></i> Oakland, CA</a>
         </div>
       </div>
     </div>
