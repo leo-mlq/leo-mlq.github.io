@@ -65,13 +65,13 @@ function handleClickMore() {
   var fired_button = $('#more').attr('value');
   if(fired_button==='More'){
     $('.grid > a').removeClass('noDisplay');
-    document.getElementById("more").innerHTML='Less';
+    document.getElementById("more").innerHTML='< Less';
     $('#more').val('Less');
   
   }
   else{
     $('#techDoc').addClass('noDisplay');
-    document.getElementById("more").innerHTML='More';
+    document.getElementById("more").innerHTML='More >';
     console.log($('#more').attr('class'));
     $('#more').val('More');
   }
