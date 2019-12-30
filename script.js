@@ -73,6 +73,7 @@ function handleClickMore() {
     $('#techDoc').addClass('noDisplay');
     $('#surveyForm').addClass('noDisplay');
     $('#productLanding').addClass('noDisplay');
+    $('#quoteMachine').addClass('noDisplay');
     document.getElementById("more").innerHTML='More >';
     console.log($('#more').attr('class'));
     $('#more').val('More');
