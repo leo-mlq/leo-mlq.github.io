@@ -74,6 +74,7 @@ function handleClickMore() {
     $('#surveyForm').addClass('noDisplay');
     $('#productLanding').addClass('noDisplay');
     $('#quoteMachine').addClass('noDisplay');
+    $('#previewer').addClass('noDisplay');
     document.getElementById("more").innerHTML='More >';
     console.log($('#more').attr('class'));
     $('#more').val('More');
