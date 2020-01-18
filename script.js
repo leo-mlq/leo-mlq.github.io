@@ -70,6 +70,7 @@ function handleClickMore() {
   
   }
   else{
+    $('#drumMachine').addClass('noDisplay');
     $('#techDoc').addClass('noDisplay');
     $('#surveyForm').addClass('noDisplay');
     $('#productLanding').addClass('noDisplay');
