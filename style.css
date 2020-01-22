@@ -140,6 +140,7 @@ h1 {
 
 /*about section*/
 .container {
+  padding: 10% 4rem;
   width: 100%;
   height: auto;
   display: flex;
