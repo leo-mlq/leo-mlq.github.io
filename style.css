@@ -316,6 +316,7 @@ h1 {
   }
 }
 .blog_container {
+  padding: 10% 4rem;
   background-color: #f8f9fa;
   height: 500px;
   font-size: 1.5rem;
