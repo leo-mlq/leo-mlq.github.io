@@ -41,10 +41,10 @@ const navScrollHighlight=()=>{
       })
     }
     console.log(sectionID);
-    $('nav  ul  li  a').css({'font-weight':'',
+    $('nav a').css({'font-weight':'',
                                 'color': ''
                                });
-    $("nav ul li a[href=#"+sectionID+"]").css({ 'font-weight':'400',
+    $("nav a[href=#"+sectionID+"]").css({ 'font-weight':'400',
                                     'color': 'white'
                                    });
   });
@@ -83,11 +83,20 @@ function handleClickMore() {
     $('#more').val('More');
   }
 }
+function expandNav() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 
 $(document).ready(function () {
   navColorChange();
   navScrollHighlight();
   typeWriter();
+  expandNav();
   //handleClickMore();
 });  
 /*add expandable navagation bar when width is less than 860px;*/

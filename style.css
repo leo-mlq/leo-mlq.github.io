@@ -102,7 +102,7 @@ h1 {
   margin: 0;
 }
 
-.navbar {
+/*.navbar {
   width: 100%;
   height: 60px;
   background: black;
@@ -116,6 +116,7 @@ h1 {
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
+  overflow: hidden;
 }
 .navbar_list li {
   margin: 2.5rem;
@@ -132,10 +133,66 @@ h1 {
 
 .navbar--sticky {
   position: -webkit-sticky;
-  /* Safari */
+
   position: sticky;
   top: 0;
   z-index: 1020;
+}
+.navbar .icon{
+  display: none;
+}*/
+.navbar {
+  background: black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  overflow: hidden;
+  /*a trick to center a div with 100vw */
+  padding: 0 calc(50% - 400px);
+}
+.navbar a {
+  display: inline-block;
+  color: #d2d4cf;
+  text-align: center;
+  padding: 14px 20px;
+  margin-left: 15px; 
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: white;
+  font-weight: 400;
+}
+
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+      float: right;
+      display: block;
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar.responsive {position: sticky;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /*about section*/
@@ -302,7 +359,7 @@ h1 {
   margin-right: auto;
 }
 
-@media (max-width: 640px) {
+@media media screen and (max-width: 640px) {
   .left_box {
     display: block;
     max-width: 100%;
