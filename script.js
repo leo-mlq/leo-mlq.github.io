@@ -26,15 +26,15 @@ const navScrollHighlight=()=>{
     let $currentSection;
     let windowWidth = window.innerWidth;
     let sectionID;
-
-    if(currentScroll>=3610){
+    console.log(currentScroll)
+    if(currentScroll>=4400){
         sectionID='contact';
         
     }
     else{
       $allSections.each(function(){
         let sectionTop=$(this).offset().top;
-        if(currentScroll > sectionTop-1  && windowWidth>WIDTH_LIMIT){
+        if(currentScroll > sectionTop-200  && windowWidth>WIDTH_LIMIT){
           $currentSection=$(this);
           sectionID=$currentSection.attr('id');
         }
