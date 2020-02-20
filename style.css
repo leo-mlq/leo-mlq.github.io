@@ -246,7 +246,7 @@ h1 {
 .project_container {
   background-color: #f8f9fa;
   height: auto;
-  padding: 10% 4rem;
+  padding: 10% 0;
 }
 
 .project_container--white {
