@@ -15,7 +15,7 @@ const navColorChange=()=>{
         });
     }
 };
-var WIDTH_LIMIT = 860;
+var WIDTH_LIMIT = 150;
 /*add navbar active link*/
 const navScrollHighlight=()=>{
   //$define a jquery var
@@ -27,9 +27,8 @@ const navScrollHighlight=()=>{
     let windowWidth = window.innerWidth;
     let sectionID;
     console.log(currentScroll)
-    if(currentScroll>=4600){
-        sectionID='contact';
-        
+    if(windowWidth>=900 && currentScroll>=4600){
+        sectionID='contact';  
     }
     else{
       $allSections.each(function(){
@@ -40,6 +39,7 @@ const navScrollHighlight=()=>{
         }
       })
     }
+    console.log(windowWidth)
     console.log(sectionID);
     $('nav a').css({'font-weight':'',
                                 'color': ''
@@ -92,11 +92,12 @@ function expandNav() {
   }
 }
 
+
+
 $(document).ready(function () {
   navColorChange();
   navScrollHighlight();
   typeWriter();
-  expandNav();
   //handleClickMore();
 });  
 /*add expandable navagation bar when width is less than 860px;*/

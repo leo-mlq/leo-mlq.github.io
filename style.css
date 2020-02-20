@@ -172,17 +172,18 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
+
+
+@media screen and (max-width: 800px) {
+
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
       float: right;
       display: block;
 
   }
-}
-
-@media screen and (max-width: 640px) {
-  .navbar.responsive {position: sticky;}
+  /*.class.class matches any element with both classes*/
+  .navbar {position: sticky;}
   .navbar.responsive .icon {
     position: absolute;
     right: 0;
@@ -307,50 +308,51 @@ h1 {
 /*contact and footer*/
 #contact {
   background-color: #212529;
+  width:100%;
+  padding: 3% calc(50% - 500px);
+}
+.contact_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1000px;
+  height: auto;
+}
+
+.contact_box--flexCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: auto;
-  color: white;
 }
-#contact .contact_box {
-  width: 100%;
-  height: 100%;
-  padding: 5% 10%;
-}
-#contact .contact_box .left_box {
-  display: inline-block;
-  max-width: 30%;
+.left_box,.right_box{
+  display: block;
   text-align: left;
   line-height: 1.5rem;
   color: white;
+
 }
-#contact .contact_box .right_box {
-  float: right;
-  margin-right: 20%;
-  display: inline-block;
-  max-width: 30%;
-  text-align: left;
-  line-height: 1.5rem;
-  color: white;
-}
-#contact .contact_box .right_box .contact_links {
+.contact_links {
   display: flex;
   flex-direction: column;
   align-items: start;
   flex-wrap: wrap;
 }
-#contact .contact_box .right_box .contact_details {
+.contact_details {
   font-family: Bahnschrift Light;
   font-size: 16px;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease-out;
 }
-#contact .contact_box .right_box .contact_details:hover {
+.contact_details:hover {
   transform: translateX(16px);
 }
-#contact .footer {
+.footer {
+  background-color: #212529;
   display: block;
-  width: 80%;
+  width: 100%;
   text-align: center;
   padding: 3%;
   color: #e0e0de;
@@ -359,19 +361,19 @@ h1 {
   margin-right: auto;
 }
 
-@media media screen and (max-width: 640px) {
-  .left_box {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 5%;
-  }
 
-  .right_box {
-    float: none;
-    position: relative;
-    max-width: 100%;
+@media screen and (max-width: 700px){
+  #contact{
+    padding: 3% 10%;
+  }
+  .contact_box{
+    flex-direction: column;
+  }
+  .left_box{
+    margin-bottom: 20px;
   }
 }
+
 .blog_container {
   padding: 10% 4rem;
   background-color: #f8f9fa;
