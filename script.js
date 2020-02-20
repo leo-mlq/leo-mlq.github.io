@@ -70,6 +70,7 @@ function handleClickMore() {
   
   }
   else{
+    $('#issueTracker').addClass('noDisplay');
     $('#exerciseTracker').addClass('noDisplay');
     $('#urlShortener').addClass('noDisplay');
     $('#drumMachine').addClass('noDisplay');
