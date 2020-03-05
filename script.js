@@ -70,6 +70,7 @@ function handleClickMore() {
   
   }
   else{
+    $('#lFile').addClass('noDisplay');
     $('#issueTracker').addClass('noDisplay');
     $('#exerciseTracker').addClass('noDisplay');
     $('#urlShortener').addClass('noDisplay');
