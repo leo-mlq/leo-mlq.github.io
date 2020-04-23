@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo Mei</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <link
+      rel="icon"
+      href="https://i.ibb.co/qJpCpLy/rsz-title.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!--welcoming section-->
+    <div id="main">
+      <section id="welcoming" class="welcoming">
+        <img
+          class="welcoming_image"
+          src="https://drive.google.com/uc?id=1lLXnju_eumdDPfEonUtXdp1PWymbuHUT"
+          alt="LeoMei"
+        />
+        <h1>Hi, I'm Leo Mei</h1>
+        <p id="typeEffect"></p>
+        <a href="#aboutme" class="btns">About ME</a>
+      </section>
+      <!--navigation section-->
+      <nav id="navbar" class="navbar">
+        <a href="#welcoming">Home</a>
+        <a href="#aboutme">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="expandNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+      </nav>
+      <!--about section-->
+      <section id="aboutme" class="nav_highlight">
+        <div class="container">
+          <h1>About Me</h1>
+          <div class="divider"></div>
+          <p class="t1">
+            Hello, I'm <b>Liqiang (Leo) Mei</b>, a Computer Engineering graduate
+            <br />with an interest of becoming a
+            <b>Full Stack Developer</b> based in <b>Bay Area, CA</b>.<br />I
+            love learning new things and embracing innovations,<br />
+            also making new friends.
+          </p>
+          <p class="t2">
+            My focus was on Embedded System especially hardware design and
+            debugging. With passion in learning state-of-art technologies and
+            curiosity-driven personality, I am working on Full-stack web
+            development via FreeCodeCamp.<br /><br />All works I have done or am
+            working on posted on this portfolio site. The site itself isn't very
+            well maintained and full of bad practices😂 because I typed it line
+            by line when I just stepped into HTML. Please let me know if you
+            have an interesting project for me to learn!<br /><br />I love to
+            learn, challenge and improve. My biggest hobbit is travelling,
+            especally small towns because I enjoy historic aerials, natural
+            views, and different cultures.
+          </p>
+        </div>
+      </section>
+
+      <!--projects-->
+      <section id="projects" class="nav_highlight">
+        <div class="project_container">
+          <h1 class="h1--noMargin">Project Gallery</h1>
+          <div class="divider divider--center"></div>
+          <div class="grid">
+            <a
+              href="https://reduxshopping.glitch.me"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/dbNrRxz/shopping-list.png"
+                alt="Simple Shopping List"
+              />
+              <div class="overlay">
+                NODE<br />
+                REACT<br />
+                REDUX<br />
+                EXPRESS<br />
+                MONGODB<br />
+                BOOSTRAP<br />
+                REACT-ROUTER<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Simple Shopping List
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://anonyboard.glitch.me"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/q7VXy1r/anonyboard.png"
+                alt="Anonymous Board"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Anonymous Message Board
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://stocktracker.glitch.me"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/8BBFQ8h/stock-Checker.png"
+                alt="Stock Checker"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Nasdaq Stock Checker
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="issueTracker"
+              href="https://issue-tracker22.glitch.me"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/crstXjZ/issue-tracker.png"
+                alt="Issue Tracker"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Issue Tracker
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://fccvconverter.glitch.me"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/3fCf7YB/converter.png"
+                alt="converter"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Metric/Imp Converter
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+
+            <a
+              id="lFile"
+              href="https://lfile.glitch.me"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/CVbfTq0/20200104011021.png"
+                alt="File API"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                File Up/Downloader
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="exerciseTracker"
+              href="https://exercisestracker.glitch.me"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/nz8pXZt/exercise-Tracker.png"
+                alt="TrackerAPI"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Exercise Tracker
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="urlShortener"
+              href="https://urlshortener-micrioservice.glitch.me"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/PWkYqBp/url.png"
+                alt="UrlAPI"
+              />
+              <div class="overlay">
+                JS<br />
+                CSS<br />
+                NODE<br />
+                EXPRESS<br />
+                MONGODB<br />
+              </div>
+              <p class="project_title">
+                <span>&lt;</span>
+                URL Shortener
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="http://leomei.site/pomodoro-clock/"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/rF5B1fV/pclock.png"
+                alt="Calculator"
+              />
+              <div class="overlay">CSS<br />HTML<br />React-Redux<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Pomodoro Clock
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://codepen.io/leo-mei/pen/vYYqYWN"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/2kxVJ0j/calculator.png"
+                alt="Calculator"
+              />
+              <div class="overlay">CSS<br />HTML<br />React JS<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Simple Calculator
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="drumMachine"
+              href="https://codepen.io/leo-mei/pen/wvvZvrm"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/PcyCsFc/on.png"
+                alt="Drum Machine"
+              />
+              <div class="overlay">CSS<br />HTML<br />React JS<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Drum Machine
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+
+            <a
+              id="previwer"
+              href="https://codepen.io/leo-mei/pen/JjjxzYG"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/cwbLxzr/markdown.png"
+                alt="Markdown Previewer"
+              />
+              <div class="overlay">CSS<br />HTML<br />React JS<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Markdown Previewer
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="quoteMachine"
+              href="https://codepen.io/leo-mei/pen/xxxmrxE"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/GfD7BM7/quote-Machine.png"
+                alt="Random Quote Machine"
+              />
+              <div class="overlay">CSS<br />HTML<br />React JS<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Random Code Machine
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="productLanding"
+              href="https://codepen.io/leo-mei/pen/ExxPjrw"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/3CVCw9Z/productlanding.png"
+                alt="Product Landing noDisplay"
+              />
+              <div class="overlay">JS<br />CSS<br />HTML<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Product Landing Page
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="surveyForm"
+              href="https://codepen.io/leo-mei/pen/xxxGeNd"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/YfWrt8L/surveyformpng.png"
+                alt="Survey Form"
+              />
+              <div class="overlay">JS<br />CSS<br />HTML<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Survey Form
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              id="techDoc"
+              href="https://codepen.io/leo-mei/full/zYYqPyj"
+              target="_blank"
+              class="grid_item noDisplay"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/zsQRdBn/technicaldoc.png"
+                alt="Technical Document"
+              />
+              <div class="overlay">JS<br />CSS<br />HTML<br /></div>
+              <p class="project_title">
+                <span>&lt;</span>
+                Technical Document
+                <span>&#47;&gt;</span>
+              </p>
+            </a>
+          </div>
+          <button
+            id="more"
+            class="btns viewMore"
+            value="More"
+            type="button"
+            onclick="handleClickMore()"
+          >
+            More
+          </button>
+        </div>
+      </section>
+
+      <!--certifications-->
+      <section id="certifications" class="nav_highlight">
+        <div class="project_container project_container--white">
+          <h1 class="h1--noMargin">Certifications</h1>
+          <div class="divider divider--center"></div>
+          <div class="grid">
+            <a
+              href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/information-security-and-quality-assurance"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/sKXNr3F/infocertificate.png"
+                alt="Info BackEnd Certification"
+              />
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/apis-and-microservices"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/RYVxrvL/api.png"
+                alt="BackEnd Certification"
+              />
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/front-end-libraries"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://i.ibb.co/1mC8bT0/fcert.png"
+                alt="Front End Certification"
+              />
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/javascript-algorithms-and-data-structures"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://drive.google.com/uc?id=1uV99K8ZnIZcHHhg4r6ZUy7YCRKfIqTKj"
+                alt="Javascript Certification"
+              />
+            </a>
+            <a
+              href="https://www.freecodecamp.org/certification/fcce30a6f9b-24cc-4959-a9dc-53adb00dd822/responsive-web-design"
+              target="_blank"
+              class="grid_item"
+            >
+              <img
+                class="grid_item_image"
+                src="https://drive.google.com/uc?id=10_tpgK_2oWrA5Sg1LxHTb1GfOsRS9jfU"
+                alt="Responsive Web Design Certification"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="blog_container nav_highlight">
+        <h1>Posts</h1>
+        <div class="divider"></div>
+        <ol>
+          <li>
+            <a
+              href="https://medium.com/@leomei/react-re-render-child-component-on-parent-state-changes-6d9fd5a952da"
+              target="_blank"
+              >React: re-render child component on parent state changes</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              href="https://medium.com/@leomei/first-time-redux-with-to-do-lists-example-e9d9b3a14761"
+              target="_blank"
+              >First-time Redux with Shopping List example</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              href="https://medium.com/@leomei/use-modularized-antd-mobile-and-add-less-support-to-react-create-react-app-928c616ef2fd"
+              target="_blank"
+              >Use modularized Antd-mobile and add LESS support to React
+              create-react-app</a
+            >
+          </li>
+          <br />
+        </ol>
+      </section>
+      <!--contact-->
+      <section id="contact" class="nav_highlight">
+        <div class="contact_box">
+          <div class="left_box">
+            <h3>Leo Mei</h3>
+            <div class="divider divider--white"></div>
+            <p>Actively seeking oppotunities in the software industry.</p>
+          </div>
+          <div class="right_box">
+            <h3>Contact Information</h3>
+            <div class="divider divider--white"></div>
+            <div class="contact_links">
+              <a href="tel:805-637-6787" class="contact_details"
+                ><i class="fas fa-mobile-alt"></i> (805)637-6787</a
+              >
+              <a href="mailto:liqiangmei@outlook.com" class="contact_details"
+                ><i class="fas fa-envelope"></i> liqiangmei@outlook.com</a
+              >
+
+              <a
+                href="https://github.com/leo-mlq"
+                target="_blank"
+                class="contact_details"
+                ><i class="fab fa-github"></i> leo-mlq</a
+              >
+              <a
+                href="https://www.google.com/maps?q=oakland,ca"
+                target="_blank"
+                class="contact_details"
+                ><i class="fa fa-map-marker"></i> Oakland, CA</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- partial -->
+    <script src="./public/script.js"></script>
+  </body>
+  <footer>
+    <div class="footer">
+      Copyright © 2019 - 2020 Leo Mei. All rights reserved.
+    </div>
+  </footer>
+</html>
