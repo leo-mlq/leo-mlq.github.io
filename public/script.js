@@ -37,8 +37,8 @@ const navScrollHighlight = () => {
         }
       });
     }
-    console.log(windowWidth);
-    console.log(sectionID);
+    //console.log(windowWidth);
+    //console.log(sectionID);
     $("nav a").css({ "font-weight": "", color: "" });
     $("nav a[href=#" + sectionID + "]").css({
       "font-weight": "400",
