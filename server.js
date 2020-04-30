@@ -7,8 +7,14 @@ var bodyParser = require("body-parser");
 var dotenv =require('dotenv');
 dotenv.config();
 
-// make all the files in 'public' available
+// make all the files in 'public' available thru virtual path
+//src = '/public/scripts.js'
 app.use("/public", express.static(process.cwd() + "/public"));
+
+//src = '/scripts.js'
+//app.use(express.static(process.cwd() + "/public"));
+
+//app.use("/assets", express.static(process.cwd() + "/images"));
 
 app.use(cors({ origin: "*" }));
 
