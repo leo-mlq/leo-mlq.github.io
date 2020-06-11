@@ -65,6 +65,7 @@ function handleClickMore() {
     document.getElementById("more").innerHTML = "< Less";
     $("#more").val("Less");
   } else {
+    $("#stockTracker").addClass("noDisplay");
     $("#converter").addClass("noDisplay");
     $("#lFile").addClass("noDisplay");
     $("#issueTracker").addClass("noDisplay");
